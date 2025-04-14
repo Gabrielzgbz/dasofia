@@ -31,7 +31,6 @@ function updateTimer() {
 updateTimer();
 setInterval(updateTimer, 1000);
 
-// Gerador de corações caindo
 const heartsContainer = document.querySelector('.hearts');
 
 function createHeart() {
@@ -50,6 +49,9 @@ function createHeart() {
         heart.remove();
     });
 }
+
+// Crie corações a cada 500ms
+setInterval(createHeart, 300);
 
 // Desbloquear autoplay ao clicar na tela
 document.addEventListener("click", () => {
