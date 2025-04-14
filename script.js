@@ -32,21 +32,25 @@ updateTimer();
 setInterval(updateTimer, 1000);
 
 // Gerador de corações caindo
+const heartsContainer = document.querySelector('.hearts');
+
 function createHeart() {
-  const heart = document.createElement("div");
-  heart.classList.add("heart");
-  heart.innerText = "💗";
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.innerHTML = '💗'; // Você pode usar um emoji de coração ou um ícone de sua escolha
 
-  heart.style.left = Math.random() * 100 + "vw";
-  heart.style.fontSize = Math.random() * 20 + 10 + "px";
-  document.body.appendChild(heart);
+    // Defina uma posição inicial aleatória
+    heart.style.left = Math.random() * 100 + 'vw'; // Posição horizontal aleatória
+    heart.style.animationDuration = Math.random() * 3 + 2 + 's'; // Duração da animação aleatória entre 2s e 5s
 
-  setTimeout(() => {
-    heart.remove();
-  }, 5000);
+    heartsContainer.appendChild(heart);
+
+    // Remover o coração após a animação
+    heart.addEventListener('animationend', () => {
+        heart.remove();
+    });
 }
 
-setInterval(createHeart, 300);
 
 // Desbloquear autoplay ao clicar na tela
 document.addEventListener("click", () => {
