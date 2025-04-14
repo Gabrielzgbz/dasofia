@@ -51,7 +51,6 @@ function createHeart() {
     });
 }
 
-
 // Desbloquear autoplay ao clicar na tela
 document.addEventListener("click", () => {
     const audio = document.getElementById("musica");
