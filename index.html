@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nosso Amor 💖</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
@@ -12,31 +13,29 @@
   <div class="container">
     <h1>Estamos juntos há...</h1>
 
-<div class="slider">
-  <button class="nav left" onclick="prevSlide()">&#10094;</button>
+    <div class="slider">
+      <button class="nav left" onclick="prevSlide()">&#10094;</button>
 
-  <div class="slides">
-    <img src="img/foto1.jpeg" class="slide active">
-    <img src="img/foto2.jpeg" class="slide">
-    <img src="img/foto3.jpeg" class="slide">
-  </div>
+      <div class="slides">
+        <img src="img/foto1.jpeg" class="slide active">
+        <img src="img/foto2.jpeg" class="slide">
+        <img src="img/foto3.jpeg" class="slide">
+      </div>
 
-  <button class="nav right" onclick="nextSlide()">&#10095;</button>
-</div>
+      <button class="nav right" onclick="nextSlide()">&#10095;</button>
+    </div>
 
-<div id="timer">Calculando...</div>
+    <div id="timer">Calculando...</div>
 
-<p class="frase">
-  Eu te amo de uma forma imensurável. Você mudou meu mundo, trouxe cor pra minha vida e me faz mais feliz todos os dias.
-</p>
-
+    <p class="frase">
+      Eu te amo de uma forma imensurável. Você mudou meu mundo, trouxe cor pra minha vida e me faz mais feliz todos os dias.
+    </p>
   </div>
 
   <audio id="musica" autoplay loop>
     <source src="musica/baco-samba-in-paris.mp3" type="audio/mp3">
     Seu navegador não suporta áudio.
   </audio>
-  
 
   <script src="script.js"></script>
 </body>
