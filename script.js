@@ -1,4 +1,4 @@
-const startDate = new Date("2025-02-27T00:00:00");
+const startDate = new Date("2025-04-16T00:00:00");
 const timerElement = document.getElementById("timer");
 
 function updateTimer() {
